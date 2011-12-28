@@ -1,7 +1,7 @@
 
 jQuery.MarkdownEditor
 =============
-It is a jQuery plugin that transforms a textarea in a Markdown Editor.
+It is a jQuery plugin that makes it easier to edit Markdown.
 
 My next step is going to be provide a better documentation and also let it more user friendly.
 
