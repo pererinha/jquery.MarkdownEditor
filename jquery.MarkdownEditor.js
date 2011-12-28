@@ -47,17 +47,17 @@
 				type : 'combo',
 				name : 'Code',
 				source : 'languages',
-				html : '`\n#{{content}}\nyour code here\n`\n' 
+				html : '\n\n`#{{content}}\nyour code here\n`\n' 
 			},
 			link : new Mark( { name : 'Link', html : '[text](url)'} ),
 			image : new Mark( { name : 'Image', html : '\n![alt text](source)\n'} ),
 			bold : new Mark( { name : 'Bold', html : '**{{content}}**', type : 'prompt' } ),
-			italic : new Mark( { name : 'Italic', html : '__{{content}}__', type : 'prompt' } ),
+			italic : new Mark( { name : 'Italic', html : '_{{content}}_', type : 'prompt' } ),
 			bullets : new Mark( { name : 'Bullets', html : '\n* item 1\n* item 2\n* item 3\n' } ),
 			list : new Mark( { name : 'List', html : '\n1. item 1\n2. item 2\n3. item 3\n' } ),
-			blockquotes : new Mark( { name : 'Blockquotes', html : '\n>> your\n>> text\n>> here'} ),
+			blockquotes : new Mark( { name : 'Blockquotes', html : '\n>> your text here'} ),
 			line : new Mark( { name : 'Line', html : '\n--------------------------\n' } ),
-			table : new Mark( { name : 'Table', html : '\n| Header | Header | Header |\n| ------ | ------ | -----: |\n|  Cell  |  Cell  |  Cell  |\n|  Cell  |  Cell  |  Cell  |\n' } ),
+			table : new Mark( { name : 'Table', html : '\n| Header | Header | Header |\n| ------ | ------ | ------ |\n|  Cell  |  Cell  |  Cell  |\n|  Cell  |  Cell  |  Cell  |\n' } ),
 	}
 	var utils = {
 		newLine : '\n',
@@ -163,7 +163,7 @@
 		return content.toString();
 	}
 	var InputButton = function( name, fn ){
-		button = $( '<button>' + name + '</button>' );
+		button = $( '<input type="button" value="' + name + '"/>' );
 		button.bind( 'click', fn );
 		return button;
 	}

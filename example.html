@@ -9,17 +9,62 @@
 </head>
 <body>
 <div class="container">
+	<form action="preview/preview.php" target="_blank" method="post">
 	<h1>jquery.MarkdownEditor</h1>
 	<h2>Example</h2>
 	<div class="example">
-	  <textarea id="markdown-it"></textarea>
+	  <textarea id="markdown-it" name="markdown-it">
+#Ham sausage jow
+
+Short loin shank tail ham. Ham sausage jowl, capicola shankle ball tip pork loin venison. 
+
+Swine filet mignon _drumstick_, rump beef ribs turducken jerky salami. Hamburger brisket leberkase pork shankle, ribeye shoulder salami tail pork belly venison filet mignon bacon pastrami **sirloin**. 
+
+
+>> Capicola shankle ball tip pork loin venison
+
+## Pastrami corned beef 
+* t-bone.
+* ribeye ham pancetta 
+* filet mignon leberkase 
+* pork chop tenderloin. 
+
+1. Pork chop flank hamburger leberkase. 
+2. Andouille chuck drumstick
+3. Pork loin tongue corned beef 
+4. T-bone boudin meatloaf bacon pancetta flank capicola beef ribs pork chop.
+
+
+****
+Javascript code
+
+`#javascript
+ // some javascript code
+ function hello(msg){
+   alert(msg);
+ }
+`
+
+****
+PHP Code
+
+`#php
+<?php
+function doSomething( $foo ){
+  // Magic things 
+  return $foo;
+}
+?>
+`</textarea>
 	</div>
+	<input type="submit" value="Preview">
+	</form>
 </div>
 <script>
 $(document).ready(function(){
 	$('#markdown-it').markdownEditor();	
 })	
 </script>
-<p><a href="https://github.com/pererinha/jquery.MarkdownEditor">Get the code</a> 
+<p><a href="https://github.com/pererinha/jquery.MarkdownEditor">Get the code</a></p>
 </body>
 </html>
